@@ -1,0 +1,81 @@
+pdf:
+  - basedir: ""
+    filename: SP800-217
+    template: _pdftemplate/template.tex
+    workdir: _pdf
+    collection: sp800-217
+    graphics: 
+      - _sp800-217/images/
+      - _pdftemplate/images/
+    sections:
+        - name: cover
+          template: _pdftemplate/sp/cover.tex
+        - name: frontmatter
+          template: _pdftemplate/abstractwrapper.tex
+          parts:
+            - template: _pdftemplate/sp/abstract.tex
+            - content: _sp800-217/note-to-reviewers.md
+            - template: _pdftemplate/sp/patents.tex
+        - name: toc
+          template: _pdftemplate/sp/toc.tex
+        - name: body
+          parts:
+            - _sp800-217/introduction.md
+            - _sp800-217/architecture.md
+            - _sp800-217/trust.md
+            - _sp800-217/federation.md
+            - _sp800-217/participants.md
+            - _sp800-217/protocol.md
+          part_template: _pdftemplate/sectionpart.tex
+          template: _pdftemplate/body.tex
+        - name: references
+          parts:
+            - _sp800-217/references.md
+          part_template: _pdftemplate/sectionpart.tex
+          template: _pdftemplate/references.tex
+        - name: appendix
+          parts:
+            - _sp800-217/examples.md
+            - content: _sp800-217/glossary.md
+              template: _pdftemplate/sp/glossary.tex
+            - content: _sp800-217/abbr.md
+              template: _pdftemplate/sp/glossary.tex
+          part_template: _pdftemplate/sectionpart.tex
+          template: _pdftemplate/appendix.tex
+    doi_url: https://doi.org/10.6028/NIST.SP.800-217.ipd
+    issued_date: January 2023
+    pubseries: Special Publication
+    long_doc_number: NIST SP 800-217 ipd
+    doc_short_title: SP 800-217 ipd
+    page_doc_number: NIST SP 800-217 ipd
+    page_title: Guidelines for PIV Federation (Initial Public Draft)
+    display_title: "NIST SP 800-217 Guidelines for PIV Federation"
+    title: "Guidelines for Personal Identity Verification (PIV) Federation"
+    language: 'en-US'
+    lineno: true
+    skiptabletoc: true
+    category: Information Security
+    subcategory: Identity
+    public_comment: January 10, 2023 - March 24, 2023
+    comment_email: piv_comments@nist.gov
+    contact: piv_comments@nist.gov
+    draft: true
+    draft_stage: Initial Public Draft
+    citation: "Ferraiolo H, Regenscheid A, Richer JP (2023) Guidelines for Personal Identity Verification (PIV) Federation. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-217 ipd."
+    approved: Approved by the NIST Editorial Review Board on YYYY-MM-DD [will be added upon final publication]
+    organizations:
+      - key: csd
+        div: Computer Security Division
+        ou: Information Technology Laboratory
+      - key: bspk
+        org: Bespoke Engineering
+    authors:
+      - name: Hildegard Ferraiolo
+        orcid: 0000-0002-7719-5999
+        org: csd
+      - name: Andrew Regenscheid
+        orcid: 0000-0002-3930-527X
+        org: csd
+      - name: Justin P. Richer
+        orcid: 0000-0003-2130-5180
+        org: bspk

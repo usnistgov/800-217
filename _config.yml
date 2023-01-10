@@ -1,0 +1,59 @@
+# Site settings
+title: SP 800-217 Guidelines for PIV Federation
+description: NIST Special Publication SP 800-217 Guidelines for the Use of Personal Identity Verification (PIV) Credentials with Federation
+baseurl: "/800-217" # the subpath of your site, e.g. /blog
+
+# Build settings
+markdown: kramdown
+
+exclude:
+- ".ruby-version"
+- ".jekyll-metadata"
+- ".gitignore"
+- Gemfile
+- Gemfile.lock
+- Makefile
+- vendor
+- README.md
+- BUILD.md
+- "*.yml"
+- "*/images/*.pdf"
+
+# GitHub information will uncomment ones names are finalized and NIST GitHub Pages resources have been allocated
+org_name: usnistgov
+repo_name: 800-217
+
+# Navigation
+# List links that should appear in the site sidebar here
+navigation:
+- text: Home
+  url: /
+  collection: false
+- text: SP 800-217
+  url: /introduction/
+  collection: sp800-217
+  anchor: s-1
+  
+  
+collections:
+  sp800-217:
+    output: true
+
+relative_links:
+  enabled:     true
+  collections: true
+
+#Uncomment when we go live 
+host: 0.0.0.0
+
+include:
+- _stylesheets
+- _javascript
+
+# Custom site configuration
+lang: en
+
+abstract:
+  sp800-217:
+    subject: "FIPS 201 defines the requirements and characteristics of government-wide interoperable identity credentials used by federal employees and contractors. It also calls for the federated use of those credentials. These guidelines provide technical requirements for federal agencies implementing digital identity services for federal employees and contractors and are not intended to constrain the development or use of standards outside of this purpose. This document focuses on the use of federated PIV identity and the use of assertions to implement PIV federations backed by PIV identity accounts and PIV credentials. Federation allows a PIV identity account to be used by relying parties outside the PIV identity account's home agency."
+    keywords: 'assertions; authentication; credential service provider; digital authentication; electronic authentication; electronic credentials; federations; PIV credentials; PIV federation; identity providers; relying parties.'
