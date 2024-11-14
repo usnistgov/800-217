@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
+    <link rel="canonical" href="/800-217/introduction/">
+
+    <!-- Google Analytics -->
+    <!--<script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&subagency=mml&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script> -->
+    <!-- DAP Analytics -->
+    <script type="text/javascript" id="_fed_an_ua_tag"
+            src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NIST&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script>
+
+	<link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
+	<script src="https://code.jquery.com/jquery-3.6.2.min.js" type="text/javascript"></script>
+	<script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+	<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/800-217/static/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/800-217/static/css/NISTStyle.css">
+    <link rel="stylesheet" href="/800-217/static/css/NISTPages.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    
+    <title>Introduction</title>
+    <meta property="og:title" content="Introduction"/>
+    
+
+    
+    <meta name="description" content="NIST Special Publication SP 800-217 Guidelines for the Use of Personal Identity Verification (PIV) Credentials with Federation">
+    <meta property="og:description" content="NIST Special Publication SP 800-217 Guidelines for the Use of Personal Identity Verification (PIV) Credentials with Federation"/>
+    
+</head>
+
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-left" role="navigation">
+	<ul class="nav navbar-nav">
+      <li id="search-box">
+        <input type="text" id="search-input" placeholder="Search..." onFocus="loadSearch()">
+        <ul id="results-container"></ul>
+      </li>
+      
+        
+        
+        
+        <li class="">
+          
+              <a href="/800-217/">Home</a>
+          
+          
+          
+          
+          
+        </li>
+      
+        
+        
+        
+        <li class="active">
+          
+              <a href="/800-217/introduction/">SP 800-217</a>
+          
+          
+          
+        
+            
+            
+            
+            <ul class="subnav">
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-217/abstract/">Abstract</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class="active"><a href="/800-217/introduction/"><span class="section">1</span>Introduction</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-217/architecture/"><span class="section">2</span>Architecture</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-217/trust/"><span class="section">3</span>Trust</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-217/federation/"><span class="section">4</span>Federation</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-217/participants/"><span class="section">5</span>Participants</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-217/protocol/"><span class="section">6</span>Protocol</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-217/references/">References</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-217/glossary/"><span class="section">A</span>Glossary</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-217/examples/"><span class="section">B</span>Examples</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-217/abbr/"><span class="section">B</span>Abbreviations</a></li>
+                
+              
+              
+
+            
+          
+            </ul>
+          
+          
+          
+        </li>
+      
+      
+      
+  </ul>
+
+</nav>
+
+
+<div class="page-switch">
+
+View this document as: <a href="/800-217/sp800-217.html">a single page</a> | <b>multiple pages</b>.
+
+</div>
+
+<div class="container">
+  <div class="row">
+
+
+
+
+
+  
+
+  
+
+<h1 id="s-1" data-section="1">
+  
+  
+    Introduction <a href="#s-1" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h1>
+    
+
+<p><em>This section is informative.</em></p>
+
+<p>PIV Cards and derived PIV credentials allow for a very high level of trust in a PIV identity account because of the requirements and processes used in the issuance of the PIV identity account, the features of the associated PIV Card, and the binding of derived PIV credentials to the PIV identity account.
+This document seeks to make the benefits of the PIV identity account available to federated relying parties (RPs) through the use of identity providers (IdPs) that verify PIV credentials and provide federated assertions representing the PIV identity account.
+Federation technologies can facilitate the connection of these PIV identity accounts across different security domains, allowing a subscriber to leverage the trust and strength of their PIV identity account at agencies other than the agency that issued the credentials.</p>
+<h2 id="background" data-section="1">
+  
+  
+    Background <a href="#background" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>This document is a companion document to <a href="/800-217/references/#ref-FIPS201">[FIPS201]</a>, providing specific details for implementing PIV federation for PIV identity accounts.  <a href="/800-217/references/#ref-FIPS201">[FIPS201]</a> defines standards for the use of PIV credentials, including the establishment of the PIV identity account, the issuance of the PIV Card, authentication using the PIV Card, management of derived PIV credentials, and other aspects of the PIV identity account. FIPS 201 provides basic requirements for the use of federation and defers to the guidelines provided in this publication to define details of what a PIV-based federation system would entail.</p>
+
+<p><a href="/800-217/references/#ref-SP-800-63C">[SP800-63C]</a> and its companion document suite of <a href="/800-217/references/#ref-SP-800-63">[SP800-63]</a> provide general guidelines for the use of federation technologies and assertions within Federal Government use cases. These guidelines are intended to be used across a wide variety of account types, authenticators, and deployment patterns. The SP 800-63 suite is not specific to PIV identity accounts.</p>
+
+<p>This document, SP 800-217, specifically applies the guidelines of <a href="/800-217/references/#ref-SP-800-63C">[SP800-63C]</a> to the PIV identity account defined in <a href="/800-217/references/#ref-FIPS201">[FIPS201]</a> to outline the details of <em>PIV federation</em>. This document provides a set of processes and technical guidelines for deployers of PIV federation with Federal Government use cases in both IdP and RP roles.</p>
+<h2 id="purpose-and-scope" data-section="1">
+  
+  
+    Purpose and Scope <a href="#purpose-and-scope" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>This document focuses on the use of federation technologies with PIV identity accounts for federal employees and contractors. This document does not discuss citizen-facing use cases covered in <a href="/800-217/references/#ref-SP-800-63C">[SP800-63C]</a>.
+This document does not address creation or life cycle of PIV identity accounts as covered in <a href="/800-217/references/#ref-FIPS201">[FIPS201]</a>, nor does this document account for the issuance and management of derived PIV credentials in PIV identity accounts as covered in <a href="/800-217/references/#ref-SP-800-157">[SP800-157]</a>.
+While the guidelines within this document could be generally useful in other circumstances, application to any additional use cases are outside the scope of this document.</p>
+<h3 id="creating-technical-interoperability-profiles-of-this-guideline" data-section="1">
+  
+  
+    Creating Technical Interoperability Profiles of This Guideline <a href="#creating-technical-interoperability-profiles-of-this-guideline" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+    
+
+<p>The guidelines in this document alone are not intended to provide full technical interoperability profiles. In addition to this document and its prerequisites (<a href="/800-217/references/#ref-FIPS201">[FIPS201]</a>, <a href="/800-217/references/#ref-SP-800-63C">[SP800-63C]</a>, and <a href="/800-217/references/#ref-SP-800-157">[SP800-157]</a>), PIV federation deployments will need technical interoperability profiles that are suitable for the federation protocol being used. The details of such profiles are out of scope for this document, but all technical interoperability profiles will need to consider the following points.</p>
+
+<dl>
+  <dt>Target Protocols:</dt>
+  <dd>Different federation protocols can be used to fulfill the requirements in the guidelines of this document in different and often incompatible ways. A technical interoperability profile ought to target each specific federation protocol in order to allow for more stringent definitions.</dd>
+  <dt>Attribute Naming:</dt>
+  <dd>Each attribute that occurs within an assertion or the response from an identity API will need to have a name (or other means of address) defined. To ease interoperability, this name ought to reflect the value being asserted, such as <code class="language-plaintext highlighter-rouge">exp</code> for an expiration timestamp or <code class="language-plaintext highlighter-rouge">sub</code> for the subject identifier. Each entity of the federation has to use the same naming convention for interoperable attributes.</dd>
+  <dt>Attribute Contents:</dt>
+  <dd>Each attribute that occurs within an assertion or the response from an identity API will need to have its type, format, structure, or other content restrictions sufficiently defined such that the value can be unambiguously understood between sender and receiver. For example, a timestamp format could be encoded as an integer number of seconds since the UNIX Epoch GMT or in an ISO 8601 date string.</dd>
+  <dt>Conformance Criteria:</dt>
+  <dd>As PIV federation systems are likely to be built on top of existing federation software, a technical interoperability profile will need to define what additional options are allowed or forbidden by conformant implementations. For example, a profile of OpenID Connect could restrict use of the Implicit Grant Type for requests and responses.</dd>
+  <dt>Home Agency IdP Records:</dt>
+  <dd>Agencies need to have a means of publishing verifiable home agency IdP records in a known location that is easily reached and machine-readable by other parties. This could take the form of a centralized directory service with a query function or a lookup pattern based on domain names.</dd>
+</dl>
+
+<p>All technical interoperability profiles also need to consider existing profiles and industry best practices for the target technology in question.</p>
+<h2 id="federation-use-cases" data-section="1">
+  
+  
+    Federation Use Cases <a href="#federation-use-cases" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>In a <em>direct authentication</em>, the claimant presents their authenticator to a verifier, which is tightly coupled with the RP and, usually, the home agency IdMS described in <a href="/800-217/architecture/#s-piv-home-idms">Sec 2.1.2</a>. The verifier conducts an authentication process of a PIV credential. This process sometimes uses an external service, such as when public key infrastructure is used to validate a certificate.</p>
+
+<p>PIV credentials are intended for use with direct authentication via the mechanisms listed in <a href="/800-217/references/#ref-FIPS201">[FIPS201]</a> and <a href="/800-217/references/#ref-SP-800-157">[SP800-157]</a>. However, there are many situations in which direct authentication is not viable or desirable.</p>
+
+<p>For example, non-PKI-based derived PIV credentials are bound and validated at the home agency. Federation allows these credentials to be used for accessing systems outside of the home agency by having the subscriber present the derived credential to the IdP, which can validate the credential and assert to the RP that the validation has taken place.</p>
+
+<p>In a <em>federated authentication</em>, the verifier is not tightly associated with RP and is instead operated by a separate but trusted entity, the IdP. The PIV Card or derived PIV credential is used to authenticate the PIV cardholder to the IdP of a federation system. The IdP creates an <em>assertion</em> that represents the authentication event of the subscriber. The IdP sends this assertion to the RP using a federation protocol, and the RP verifies the assertion upon receipt.</p>
+
+<p>In order to authenticate the subscriber, the IdP needs to perform the role of verifier for one or more PIV credentials in the PIV identity account. In some cases, the IdP is a service directly tied to the home agency IdMS. This tight coupling allows the IdP a direct view of the status of the PIV identity account and all associated PIV credentials. However, there are several mechanisms for a PIV IdP to be run by a party other than the home agency. For example, the home agency could outsource the IdP functionality and synchronize the state of its PIV identity accounts using a provisioning protocol or similar system. Alternatively, PKI-based PIV credentials can be verified by an IdP that is run by a party other than the home agency. In this scenario, the validity of the PIV identity account is inferred from the validity of the credential presented to the third-party IdP, and there is no connection to the home agency IdMS.</p>
+<h3 id="federation-considerations" data-section="1">
+  
+  
+    Federation Considerations <a href="#federation-considerations" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+    
+
+<p>The use of a federation protocol allows RPs to be shielded from the complexities and requirements of managing individual authenticators. When a new authentication technology is adopted, only the IdP needs to be updated in order for the entire network to benefit. The home agency has the option to bind and manage any number of valid PIV credentials to the PIV identity account. The lifecycle of adding and removing authenticators to the PIV identity account does not affect the RP, which implements only the federation protocol.</p>
+
+<p>Federation allows an RP to access PIV identity accounts that originate from different agencies on different networks. This connection allows an agency to leverage the identity infrastructure of another agency without needing to replicate the PIV identity account management process. The federation process allows the cardholder to use their established PIV credentials to authenticate to a variety of services through the PIV IdP without having to establish separate credentials at those RPs.</p>
+
+<p>The subject identifier asserted by the IdP to the RP is stable to the PIV identity account over time and across different authenticators, including different certificates and attribute changes such as email address or name changes. The subject identifier can also be generated in a pairwise fashion for use cases that require a higher degree of privacy between multiple RPs while still providing a smooth user experience for the subscriber.</p>
+
+<p>Many RPs need access to attributes about the subscriber, such as a display name or contact information. The fixed set of attributes included in a PIV certificate are presented as a whole to all RPs at which the certificate is presented, and some derived PIV credentials carry no attributes at all. In contrast, the attributes released during a federation transaction can vary depending on a variety of factors, including the nature of access required and the parameters of the RP. These attributes can include information in the PIV identity account that is not carried in any specific authenticator. In fact, these attributes are made available to the RP separate from the subscriber’s use of any particular authenticator.</p>
+
+<p>An RP may want to verify that the PIV identity account is still active and has not been terminated, but in many circumstances, the RP will not have direct access to the PIV identity account. With federated protocols, the IdP is the authority for the accounts it asserts, allowing RPs to trust that these accounts are in good and current standing according to the IdP. When a PIV identity account is terminated, that account cannot be used to authenticate to the IdP and therefore can no longer be used at any connected RPs.</p>
+
+<p>In advanced circumstances, the IdP and RP can engage in shared signaling about security events concerning accounts, agencies, and applications. These signals can inform a party about suspicious behavior with a given account or proactively indicate significant changes in an account’s status, such as termination, without the need for action on the subscriber’s part.</p>
+
+<p>The RPs in a federation relationship transitively benefit from the security practices of the IdP. Instead of relying on all RPs to manage authenticators and accounts for many users over time, the IdP can act as a dedicated identity management device within the network.</p>
+
+<p>This also means that an IdP would be aware of the usage of a given PIV identity account under its control at different RPs within its trust networks. While this has positive benefits for security, it does pose a privacy tradeoff wherein the IdP needs to be trusted with this usage information.</p>
+<h2 id="audience" data-section="1">
+  
+  
+    Audience <a href="#audience" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>This document is intended for stakeholders who are responsible for procuring, designing, implementing, and managing deployments of PIV federation in both the IdP and RP roles.</p>
+<h2 id="notations" data-section="1">
+  
+  
+    Notations <a href="#notations" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>This guideline uses the following typographical conventions in text:</p>
+
+<ul>
+  <li>Specific terms in <strong>CAPITALS</strong> represent normative requirements. When these same terms are not in <strong>CAPITALS</strong>, the term does not represent a normative requirement.
+    <ul>
+      <li>The terms “<strong>SHALL</strong>” and “<strong>SHALL NOT</strong>” indicate requirements to be followed strictly in order to conform to the publication and from which no deviation is permitted.</li>
+      <li>The terms “<strong>SHOULD</strong>” and “<strong>SHOULD NOT</strong>” indicate that among several possibilities, one is recommended as particularly suitable without mentioning or excluding others, that a certain course of action is preferred but not necessarily required, or that (in the negative form) a certain possibility or course of action is discouraged but not prohibited.</li>
+      <li>The terms “<strong>MAY</strong>” and “<strong>NEED NOT</strong>” indicate a course of action permissible within the limits of the publication.</li>
+      <li>The terms “<strong>CAN</strong>” and “<strong>CANNOT</strong>” indicate a possibility and capability—whether material, physical, or causal—or, in the negative, the absence of that possibility or capability.</li>
+    </ul>
+  </li>
+</ul>
+<h2 id="document-structure" data-section="1">
+  
+  
+    Document Structure <a href="#document-structure" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>This document is organized as follows. Each section is labeled as either normative (i.e., mandatory for compliance) or informative (i.e., not mandatory).</p>
+
+<ul>
+  <li>Section 2 describes a general architecture for PIV federation. This section is <em>informative</em>.</li>
+  <li>Section 3 describes the trust agreements in a PIV federation. This section is <em>normative</em>.</li>
+  <li>Section 4 describes the Federation Assurance Levels as applied to PIV federation. This section is <em>normative</em>.</li>
+  <li>Section 5 describes the requirements for IdPs and RPs in a PIV federation. This section is <em>normative</em>.</li>
+  <li>Section 6 describes the requirements for protocol elements in a PIV federation, including assertion contents. This section is <em>normative</em>.</li>
+  <li>References contains a list of publications referred to from this document. This section is <em>informative</em>.</li>
+  <li>Appendix A contains a glossary of selected terms used in this document. This appendix is <em>informative</em>.</li>
+  <li>Appendix B contains a selected list of abbreviations used in this document. This appendix is <em>informative</em>.</li>
+</ul>
+
+
+  
+
+
+
+  </div>
+</div>
+<footer role="contentInfo" class="site-footer">
+  <div class="section-container">
+    <div class="section-content">
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    function loadSearch() {
+        var sjs = SimpleJekyllSearch({
+          searchInput: document.getElementById('search-input'),
+          resultsContainer: document.getElementById('results-container'),
+          json: '/800-217/search.json'
+        });
+    }
+    $(function() {
+      
+      // highlight normative language by adding classes
+      $('strong').filter(':contains("SHALL"), :contains("SHALL NOT"), :contains("SHOULD"), :contains("SHOULD NOT"), :contains("MAY"), :contains("NEED NOT"), :contains("CAN"), :contains("CANNOT"), :contains("CAPITALS")').each(function(i, el) {
+        var $el;
+        $el = $(el);
+        $el.addClass('normative');
+      });
+      // highlight the target
+      $('a:target').parent().addClass('target');
+      $(':target').addClass('target');
+      $(window).on('hashchange', function(e) {
+        $('.target').removeClass('target');
+        $('a:target').parent().addClass('target');
+        $(':target').addClass('target');
+      });
+    });
+</script>
+
+
+</body>
+</html>

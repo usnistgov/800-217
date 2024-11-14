@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
+    <link rel="canonical" href="/800-217/examples/">
+
+    <!-- Google Analytics -->
+    <!--<script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&subagency=mml&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script> -->
+    <!-- DAP Analytics -->
+    <script type="text/javascript" id="_fed_an_ua_tag"
+            src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NIST&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script>
+
+	<link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
+	<script src="https://code.jquery.com/jquery-3.6.2.min.js" type="text/javascript"></script>
+	<script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+	<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/800-217/static/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/800-217/static/css/NISTStyle.css">
+    <link rel="stylesheet" href="/800-217/static/css/NISTPages.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    
+    <title>Examples</title>
+    <meta property="og:title" content="Examples"/>
+    
+
+    
+    <meta name="description" content="NIST Special Publication SP 800-217 Guidelines for the Use of Personal Identity Verification (PIV) Credentials with Federation">
+    <meta property="og:description" content="NIST Special Publication SP 800-217 Guidelines for the Use of Personal Identity Verification (PIV) Credentials with Federation"/>
+    
+</head>
+
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-left" role="navigation">
+	<ul class="nav navbar-nav">
+      <li id="search-box">
+        <input type="text" id="search-input" placeholder="Search..." onFocus="loadSearch()">
+        <ul id="results-container"></ul>
+      </li>
+      
+        
+        
+        
+        <li class="">
+          
+              <a href="/800-217/">Home</a>
+          
+          
+          
+          
+          
+        </li>
+      
+        
+        
+        
+        <li class="active">
+          
+              <a href="/800-217/introduction/">SP 800-217</a>
+          
+          
+          
+        
+            
+            
+            
+            <ul class="subnav">
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-217/abstract/">Abstract</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-217/introduction/"><span class="section">1</span>Introduction</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-217/architecture/"><span class="section">2</span>Architecture</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-217/trust/"><span class="section">3</span>Trust</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-217/federation/"><span class="section">4</span>Federation</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-217/participants/"><span class="section">5</span>Participants</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-217/protocol/"><span class="section">6</span>Protocol</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-217/references/">References</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-217/glossary/"><span class="section">A</span>Glossary</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class="active"><a href="/800-217/examples/"><span class="section">B</span>Examples</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-217/abbr/"><span class="section">B</span>Abbreviations</a></li>
+                
+              
+              
+
+            
+          
+            </ul>
+          
+          
+          
+        </li>
+      
+      
+      
+  </ul>
+
+</nav>
+
+
+<div class="page-switch">
+
+View this document as: <a href="/800-217/sp800-217.html">a single page</a> | <b>multiple pages</b>.
+
+</div>
+
+<div class="container">
+  <div class="row">
+
+
+
+
+
+  
+
+  
+
+<h1 id="examples" data-section="B">
+  
+  
+    Examples <a href="#examples" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h1>
+    
+
+<p><em>This appendix is informative.</em></p>
+
+<p>This appendix contains several example scenarios of PIV federation in various environments and applications to show different kinds of trust establishment, account management, and authenticator usage. The details of the federation transactions within each scenario all follow the common patterns discussed in <a href="/800-217/references/#ref-SP-800-63C">[SP800-63C]</a> and adhere to the requirements in this document.</p>
+
+<p>The scenarios in this section are for illustrative purposes and do not convey additional requirements beyond those imposed by this specification.</p>
+<h2 id="direct-connection-to-the-home-agency-idp" data-section="B">
+  
+  
+    Direct Connection to the Home Agency IdP <a href="#direct-connection-to-the-home-agency-idp" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>Agency A, which issues and manages PIV identity accounts, sets up an OpenID Connect IdP in order to make its PIV identity accounts available online through a federation process. The agency publishes its home agency IdP record from its publicly available website with all of the information required by RPs to establish a connection.</p>
+
+<p>The RP enters into a pairwise trust agreement with the IdP to accept assertions for Agency A. The RP declares the set of attributes that it needs from the IdP as part of this agreement. The RP uses a just-in-time provisioning system to establish an RP subscriber account when the subscriber logs in for the first time. The RP has other pairwise agreements with other IdPs to accept assertions for different agencies but will reject any assertions for accounts at Agency A that come from any other IdP.</p>
+
+<p>The IdP generates a pairwise federated identifier for the PIV identity account for each RP that it is in contact with by hashing the identifier for the RP along with a randomly generated value stored with the PIV identity account at the IdP. This way, each new RP that signs on to the IdP gets a different federated identifier for a single account, but a consistent federated identifier is used for each RP with that account.</p>
+
+<p>Per the terms of the trust agreement, the subscriber is prompted by the IdP the first time they log on to the RP. The IdP asks for the subscriber’s consent at runtime to share attributes with the RP. The IdP prompts the subscriber to allow the IdP to remember this consent decision. This stored decision causes the IdP to act on the stored consent in a future request and not prompt the subscriber if the same RP requests the same attributes.</p>
+<h2 id="multilateral-federation-network" data-section="B">
+  
+  
+    Multilateral Federation Network <a href="#multilateral-federation-network" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>Agencies A, B, and C each have a home agency IdP running OpenID Connect for their PIV identity accounts. All three agencies join a multilateral federation in which the federation authority independently verifies that each home agency IdP represents the agency in question. The federation authority publishes the home agency IdP records for all agencies that are part of the multilateral federation. This publication allows RPs within the federation to discover which IdP is to be used to access accounts for a given agency under the rules of the federation agreement.</p>
+
+<p>RPs X and Y wish to allow logins from agencies A, B, and C, and the RPs declare their intent and a list of required attributes to the federation authority. The federation authority assesses both RP requests and adds them to the multilateral federation. This allows both RPs to register at each of the three separate IdPs as needed for each agency.</p>
+
+<p>Both RPs interface directly with each of the three IdPs and not through a federation proxy. When a new IdP or RP is added to the multilateral federation agreement, the existing IdPs and RPs are notified of the new component and its parameters.</p>
+
+<p>The IdPs and RPs establish a shared signaling channel under the auspices of the federation authority. This allows any IdP and any RP to report suspicious or malicious behavior that involves a specific account to the rest of the members under the federation authority.</p>
+<h2 id="enterprise-application" data-section="B">
+  
+  
+    Enterprise Application <a href="#enterprise-application" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>The home agency IdP establishes a pairwise agreement with an RP to provide an enterprise-class service to the subjects of the agency’s PIV identity accounts. As part of this trust agreement, the home agency IdP allows access to a provisioning API for the RP. The provisioning API pushes a set of federated identifiers and associated attributes to the RP that allow the RP to pre-provision RP subscriber accounts for every PIV identity account at the IdP.</p>
+
+<p>The existence of these RP subscriber accounts allows the RP to offer things like access rights, sharing, and messaging to all accounts on the system, whether or not the specific account has logged in to the RP yet.</p>
+
+<p>Under the terms of the trust agreement, the RP is placed on an allowlist. Consequently, subscribers are not prompted for consent at runtime because the agency consented to use the service on behalf of all accounts at the time the RP was onboarded. This gives subscribers a seamless single sign-on experience, even though a federation protocol is being used across security domain boundaries. The RP can always request a re-authentication of the subscriber, resulting in a fresh assertion from the IdP.</p>
+
+<p>The RP subscriber accounts are synchronized using the provisioning API. When a new PIV identity account is created, modified, or deleted at the IdP, the IdP updates the status of the RP subscriber account using the provisioning API. This allows the RP to always have an up-to-date status for each PIV identity account. For example, when the subscriber account is terminated at the IdP, the provisioning API signals to the RP that the RP subscriber account is to be terminated immediately. The RP removes all locally cached attributes for the account in question, except for the identifiers and references in audit and access logs.</p>
+<h2 id="pki-based-federation-gateway" data-section="B">
+  
+  
+    PKI-Based Federation Gateway <a href="#pki-based-federation-gateway" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>A service provider that does not issue any PIV identity account of its own sets up a SAML IdP that accepts PKI-based PIV credentials as its only authentication method. These accounts are provisioned at the IdP using the attributes in the certificates when the subscriber first presents the certificate. The IdP collects no additional attributes from the subscriber in the process.</p>
+
+<p>The IdP generates federated identifiers for the accounts by computing a hash of the authentication certificate and encoding that hash in Base64. This process fulfills the requirements of this document for federated identifiers, but it is specific to this IdP and need not be known or understood by any RP connecting through the IdP. If the subscriber changes any attributes in the certificate (e.g., their name), then a new federated identifier will be created as a result. As a result, this IdP does not necessarily provide a stable subject identifier across authenticator updates.</p>
+
+<p>The RP enters into a pairwise trust agreement with the IdP to accept assertions for any agency with PIV credentials. The RP does not have any other IdPs that it speaks to directly, and so the only way to log in to the RP is through this gateway. Since the IdP accepts a broad range of PKI-based credentials, this allows the RP access to any account based on those credentials.</p>
+
+<p>This setup does not allow the PIV identity accounts to use non-PKI-based derived PIV credentials since the IdP portion of the gateway is not the home agency IdP for any of the accounts in question. The RP is also not able to receive any attributes other than those available directly to the IdP through subscriber certificates. To ensure account continuity, an RP would need to have an out-of-band process to bind their new federated identifier to the existing RP subscriber account if the certificate and attributes change over time.</p>
+
+<p>The IdP is not acting as a federation proxy because the inbound credential is not a federated assertion but rather a PKI-based credential that the gateway processes directly as a verifier.</p>
+<h2 id="piv-federation-proxy-as-a-federation-authority" data-section="B">
+  
+  
+    PIV Federation Proxy as a Federation Authority <a href="#piv-federation-proxy-as-a-federation-authority" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>A federation proxy is set up within a multilateral federation. The proxy is run by the federation authority. All IdPs under the multilateral agreement register the proxy as an RP. The RPs within the federation authority connect to the proxy as their only IdP. All federation transactions within the multilateral federation flow through the proxy.</p>
+
+<p>The federation authority discloses the nature of the proxy to all parties, so the IdPs know that this particular RP is a proxy, and the RPs know that their IdP is a proxy. Furthermore, the proxy lists all of the upstream IdPs and their associated populations of PIV identity accounts to all RPs connecting through the proxy.</p>
+
+<p>The proxy discloses to the RPs which upstream IdPs participated in the authentication of the PIV identity account to the proxy, allowing the downstream RPs to validate that the source of the federation transaction through the proxy is appropriate for the PIV identity account in question.</p>
+
+<p>The proxy is not regarded as a home agency IdP for any RP in the system, even if the IdPs connecting to the proxy are themselves home agency IdPs.</p>
+<h2 id="fal3-with-a-piv-card-and-pki-based-derived-piv-credentials" data-section="B">
+  
+  
+    FAL3 With a PIV Card and PKI-Based Derived PIV Credentials <a href="#fal3-with-a-piv-card-and-pki-based-derived-piv-credentials" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>The PIV Card and certain PKI-based derived PIV credentials can be used as IdP-managed bound authenticators for use at FAL3. The home agency IdP authenticates the PIV identity account using an authenticator bound to the account and then creates an assertion that is flagged as FAL3. The assertion also contains the certificate common name (CN) and thumbprint of the certificate to be used as a bound authenticator.</p>
+
+<p>When the RP receives the assertion, it processes it as usual and sees the FAL3 flag and the certificate attributes. The RP matches the CN against attributes in the RP Subscriber Account to ensure that the certificate being identified is appropriate for the PIV identity account being represented. The RP then prompts the subscriber to authenticate using a certificate and compares that certificate against the provided CN and thumbprint, ensuring that they match. When the certificate has been validated, the RP creates a secure session at FAL3. From this point forward in the session, the RP no longer requires presentation of the certificate in order to access the RP’s services.</p>
+<h2 id="fal3-with-an-rp-bound-authenticator" data-section="B">
+  
+  
+    FAL3 With an RP-Bound Authenticator <a href="#fal3-with-an-rp-bound-authenticator" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>The home agency IdP authenticates the PIV identity account using an authenticator bound to the account, and then creates an assertion that is flagged as FAL3 and using an RP-bound authenticator.</p>
+
+<p>When the RP receives the assertion, it processes it as usual and sees the FAL3 flag. The RP looks up the bound authenticator associated with the RP Subscriber Account and prompts the subscriber for this authenticator. When the authenticator has been verified, the RP creates a secure session at FAL3.</p>
+<h2 id="issuance-to-a-digital-wallet" data-section="B">
+  
+  
+    Issuance to a Digital Wallet <a href="#issuance-to-a-digital-wallet" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>The home agency provides a service to issue PIV-account-backed credentials to digital wallets. This home agency has decided to accept any wallet as capable of issuing credentials at FAL1. During issuance, the subscriber logs in to the home agency’s issuing endpoint using their PIV Card. The subscriber activates their wallet and presents it to the home agency, which issues a signed attribute bundle to the wallet representing the PIV identity account.</p>
+
+<p>During the federated transaction, the subscriber presents their wallet to the RP to log in. The RP requests an assertion from the wallet, which is acting as the IdP. The subscriber activates the wallet, and the wallet issues an assertion and delivers it to the RP. The RP looks up the home agency’s attribute bundle signing keys and validates the signed attribute bundle based on those keys. The RP then validates the assertion based on the key included in the signed attribute bundle.</p>
+
+
+  
+
+
+
+  </div>
+</div>
+<footer role="contentInfo" class="site-footer">
+  <div class="section-container">
+    <div class="section-content">
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    function loadSearch() {
+        var sjs = SimpleJekyllSearch({
+          searchInput: document.getElementById('search-input'),
+          resultsContainer: document.getElementById('results-container'),
+          json: '/800-217/search.json'
+        });
+    }
+    $(function() {
+      
+      // highlight normative language by adding classes
+      $('strong').filter(':contains("SHALL"), :contains("SHALL NOT"), :contains("SHOULD"), :contains("SHOULD NOT"), :contains("MAY"), :contains("NEED NOT"), :contains("CAN"), :contains("CANNOT"), :contains("CAPITALS")').each(function(i, el) {
+        var $el;
+        $el = $(el);
+        $el.addClass('normative');
+      });
+      // highlight the target
+      $('a:target').parent().addClass('target');
+      $(':target').addClass('target');
+      $(window).on('hashchange', function(e) {
+        $('.target').removeClass('target');
+        $('a:target').parent().addClass('target');
+        $(':target').addClass('target');
+      });
+    });
+</script>
+
+
+</body>
+</html>
