@@ -14,7 +14,6 @@ pdf:
           template: _pdftemplate/abstractwrapper.tex
           parts:
             - template: _pdftemplate/sp/abstract.tex
-            - content: _sp800-217/note-to-reviewers.md
             - template: _pdftemplate/sp/patents.tex
         - name: toc
           template: _pdftemplate/sp/toc.tex
@@ -42,13 +41,14 @@ pdf:
               template: _pdftemplate/sp/glossary.tex
           part_template: _pdftemplate/sectionpart.tex
           template: _pdftemplate/appendix.tex
-    doi_url: https://doi.org/10.6028/NIST.SP.800-217.ipd
-    issued_date: January 2023
-    pubseries: Special Publication
-    long_doc_number: NIST SP 800-217 ipd
-    doc_short_title: SP 800-217 ipd
-    page_doc_number: NIST SP 800-217 ipd
-    page_title: Guidelines for PIV Federation (Initial Public Draft)
+    doi_url: https://doi.org/10.6028/NIST.SP.800-217.fpd
+    info_url: https://csrc.nist.gov/pubs/sp/800/217/fpd
+    issued_date: November 2024
+    pubseries: Special Publication 800
+    long_doc_number: NIST SP 800-217 fpd
+    doc_short_title: SP 800-217
+    page_doc_number: NIST SP 800-217 fpd
+    page_title: Guidelines for PIV Federation
     display_title: "NIST SP 800-217 Guidelines for PIV Federation"
     title: "Guidelines for Personal Identity Verification (PIV) Federation"
     language: 'en-US'
@@ -56,12 +56,12 @@ pdf:
     skiptabletoc: true
     category: Information Security
     subcategory: Identity
-    public_comment: January 10, 2023 - March 24, 2023
+    public_comment: November 14, 2024 - January 10, 2025
     comment_email: piv_comments@nist.gov
     contact: piv_comments@nist.gov
     draft: true
-    draft_stage: Initial Public Draft
-    citation: "Ferraiolo H, Regenscheid A, Richer JP (2023) Guidelines for Personal Identity Verification (PIV) Federation. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-217 ipd."
+    draft_stage: Final Public Draft
+    citation: "Ferraiolo H, Regenscheid A, Richer JP (2024) Guidelines for Personal Identity Verification (PIV) Federation. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) NIST SP 800-217 fpd."
     approved: Approved by the NIST Editorial Review Board on YYYY-MM-DD [will be added upon final publication]
     organizations:
       - key: csd

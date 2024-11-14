@@ -33,6 +33,9 @@ IAL
 IdP
 : Identity Provider
 
+IdMS
+: Identity Management System
+
 PKI
 : Public Key Infrastructure
 

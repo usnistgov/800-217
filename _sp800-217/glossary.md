@@ -12,23 +12,29 @@ section: A
 
 _This section is informative._
 
-Home Agency
-: The agency responsible for the issuance and management of a PIV identity account.
+home agency
+: The agency responsible for the issuance and management of a PIV identity account. Also known as the issuing agency, with regard to the PIV identity account.
 
-Home IdP
-: The officially sanctioned IdP of the home agency for a PIV identity account.
+home agency identity management system (IdMS)
+: The identity management system that stores and manages the PIV identity account, its associated attributes, and PIV credential bindings.
 
-Identity Provider (IdP)
+home agency identity provider (IdP)
+: The officially sanctioned identity provider of the home agency for a PIV identity account.
+
+identity provider (IdP)
 : The party that verifies the credentials of a subscriber account and issues assertions to an RP based on that account for federation.
 
-PIV Credential
+organizational affiliation
+: The list of organizations affiliated with a PIV identity account. This is often the same as the home agency, but can be different in practice.
+
+PIV credential
 : A PIV Card or derived PIV credential.
 
-PIV Federation
+PIV federation
 : A federation process that presents a PIV identity account from a PIV IdP. The subscriber is authenticated at the IdP using PIV credentials.
 
-PIV IdP
-: An IdP that accepts PIV credentials as authenticators for PIV identity accounts as part of PIV federation. The IdP trusted by the RP to create assertions for a PIV identity account.
+PIV identity provider (IdP)
+: An identity provider that accepts PIV credentials as authenticators for PIV identity accounts as part of PIV federation. The IdP trusted by the RP to create assertions for a PIV identity account.
 
-Relying Party (RP)
+relying party (RP)
 : The party that accepts an assertion from an IdP to allow the federated login of a PIV identity account.

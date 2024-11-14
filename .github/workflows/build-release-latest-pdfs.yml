@@ -1,0 +1,55 @@
+#  Builds and releases 
+
+name: build-release-latest-pdfs
+
+on:
+  # Triggers the workflow on a push to the "main" branch
+  push:
+    branches: [ "main" ]
+  # Allow manually-started runs
+  workflow_dispatch:
+
+
+jobs:
+
+  build-release-pdfs:
+    # Use github-hosted runner
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Check out Repo
+        uses: actions/checkout@v4
+
+      # Set date, commit hash for CI builds
+      - name: Set date and commit hash for CI builds
+        id: vars
+        run: |
+          echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+          echo "build_date=$(date '+%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+      - name: Debug- Check outputs
+        run: |
+          echo "Hash: ${{ steps.vars.outputs.sha_short }}"
+          echo "Build Date: ${{ steps.vars.outputs.build_date }}"
+
+      # Add the date/commit hash/cover label to documents
+      - name: Modify document frontmatter
+        run: |
+          sed -E -i '/draft_stage:/d' _pdf.yml
+          sed -E -i '/  - basedir:*/a\    draft_stage: CI Build (${{ steps.vars.outputs.sha_short }})' _pdf.yml
+          sed -E -i '/page_doc_number:/s/($| *\(.*\) *)/ (${{ steps.vars.outputs.sha_short }})/' _pdf.yml
+          sed -E -i 's/issued_date:.*/issued_date: ${{ steps.vars.outputs.build_date }}/' _pdf.yml
+
+        # Build PDFs with docker    
+      - name: Build the artifacts with the docker image
+        run: docker compose -f docker-compose-pdf.yml up
+            
+        # Create/update documents under Latest tag    
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          title: "Development Build"
+          files: |
+            _pdf/SP800-217/SP800-217.pdf
