@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -o errexit #abort if any command fails
+set -o pipefail #keep git exit codes when output is filtered
 me=$(basename "$0")
 
 help_message="\
@@ -120,13 +121,13 @@ main() {
 		return 1
 	fi
 
-	if git ls-remote --exit-code $repo "refs/heads/$deploy_branch" ; then
+	#the repo URL may contain a secret token, so keep it out of traces and git output
+	disable_expanded_output
+	if sanitize git ls-remote --exit-code "$repo" "refs/heads/$deploy_branch" ; then
 		# deploy_branch exists in $repo; make sure we have the latest version
-		
-		disable_expanded_output
-		git fetch --force $repo $deploy_branch:$deploy_branch
-		enable_expanded_output
+		sanitize git fetch --force "$repo" "$deploy_branch:$deploy_branch"
 	fi
+	enable_expanded_output
 
 	# check if deploy_branch exists locally
 	if git show-ref --verify --quiet "refs/heads/$deploy_branch"
@@ -169,7 +170,7 @@ commit+push() {
 
 	disable_expanded_output
 	#--quiet is important here to avoid outputting the repo URL, which may contain a secret token
-	git push --quiet $repo $deploy_branch
+	sanitize git push --quiet "$repo" "$deploy_branch"
 	enable_expanded_output
 }
 
@@ -185,7 +186,6 @@ enable_expanded_output() {
 disable_expanded_output() {
 	if [ $verbose ]; then
 		set +o xtrace
-		set -o verbose
 	fi
 }
 
@@ -209,8 +209,20 @@ restore_head() {
 	git reset --mixed
 }
 
+#replace the repo URL (matched literally) with the text '$repo'
 filter() {
-	sed -e "s|$repo|\$repo|g"
+	if [[ -z $repo ]]; then
+		cat
+		return
+	fi
+	REPO="$repo" awk '{
+		out = ""
+		while ((i = index($0, ENVIRON["REPO"])) > 0) {
+			out = out substr($0, 1, i - 1) "$repo"
+			$0 = substr($0, i + length(ENVIRON["REPO"]))
+		}
+		print out $0
+	}'
 }
 
 sanitize() {
