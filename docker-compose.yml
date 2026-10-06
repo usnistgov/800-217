@@ -3,7 +3,7 @@ version: '3'
 services:
   server:
     platform: linux/amd64
-    image: jricher/nistpages-dev:0.13.0
+    image: jricher/nistpages-dev:0.13.0@sha256:e1cce62b0f14ce03856034f01a1517142aa689ea453dd5a8bb24a33fe5d5ad64
     volumes:
       - .:/srv/jekyll
     command: serve

@@ -9,6 +9,8 @@ on:
   # Allow manually-started runs
   workflow_dispatch:
 
+permissions:
+  contents: write
 
 jobs:
 
@@ -46,10 +48,16 @@ jobs:
         run: docker compose -f docker-compose-pdf.yml up
             
         # Create/update documents under Latest tag    
-      - uses: "marvinpinto/action-automatic-releases@latest"
+      - name: Move latest tag to this commit
+        run: |
+          git tag -f latest
+          git push -f origin refs/tags/latest
+
+      - name: Release
+        uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65 # v2.6.2
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
-          title: "Development Build"
+          tag_name: latest
+          name: Development Build
+          prerelease: true
           files: |
             _pdf/SP800-217/SP800-217.pdf

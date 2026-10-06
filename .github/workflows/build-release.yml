@@ -6,6 +6,8 @@ on:
     types:
       - created
 
+permissions:
+  contents: write
 jobs:
 
   build-release-pdfs:
@@ -22,7 +24,7 @@ jobs:
         run: docker compose -f docker-compose-pdf.yml up
 
       - name: Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65 # v2.6.2
         with:
           files: |
             _pdf/SP800-217/SP800-217.pdf
